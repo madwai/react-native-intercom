@@ -14,6 +14,19 @@
 
 RCT_EXPORT_MODULE();
 
+// Available as NativeModules.IntercomWrapper.logEvent
+RCT_EXPORT_METHOD(setApiKeyAndAppId:(NSString*)apiKey appId:(NSString*)appId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+    NSLog(@"setApiKeyAndAppId with %@ & %@", apiKey, appId);
+
+    if (apiKey.length > 0 && appId.length > 0) {
+        [Intercom setApiKey:apiKey forAppId:appId];
+        resolve(appId);
+    } else {
+        NSLog(@"[Intercom] ERROR - No Api Key or App id. You must supply an apiKey and appId");
+        reject(@"", @"No Api Key or App id. You must supply an apiKey and appId", nil);
+    }
+};
+
 // Available as NativeModules.IntercomWrapper.registerIdentifiedUser
 RCT_EXPORT_METHOD(registerIdentifiedUser:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     NSLog(@"registerIdentifiedUser with %@", options);

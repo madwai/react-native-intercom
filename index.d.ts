@@ -48,6 +48,13 @@ export function updateUser(attributes: {
 }): Promise<void>;
 
 /**
+ * Log an event
+ * @param {string} apiKey
+ * @param {string} appId
+ */
+export function setApiKeyAndAppId(apiKey: string, appId: string): Promise<void>;
+
+/**
  * registerIdentifiedUser
  * @param {userId: string} options
  * @returns {Promise<void>}

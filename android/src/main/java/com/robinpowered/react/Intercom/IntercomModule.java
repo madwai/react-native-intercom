@@ -43,6 +43,24 @@ public class IntercomModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void setApiKeyAndAppId(String apiKey, String appId, Promise promise) {
+        try {
+            if (apiKey == null || appId == null) {
+                Log.e(TAG, "setApiKeyAndAppId - Invalid apiKey or appId");
+                promise.reject("Invalid apiKey or appId");
+            }
+            
+            Intercom.initialize(reactContext, apiKey, appId);
+
+            Log.i(TAG, "setApiKeyAndAppId");
+            promise.resolve(null);
+        } catch (Exception e) {
+            Log.e(TAG, "setApiKeyAndAppId - unable to deconstruct metaData");
+            promise.reject(e.toString());
+        }
+    }
+
+    @ReactMethod
     public void registerIdentifiedUser(ReadableMap options, Promise promise) {
         try {
             if (options.hasKey("email") && options.getString("email").length() > 0) {
