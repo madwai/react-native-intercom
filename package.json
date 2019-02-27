@@ -1,6 +1,6 @@
 {
   "name": "react-native-intercom",
-  "version": "13.0.0",
+  "version": "13.0.1",
   "description": "A React Native client for Intercom.io",
   "main": "./lib/IntercomClient.js",
   "scripts": {
@@ -30,5 +30,7 @@
     "url": "https://github.com/tinycreative/react-native-intercom/issues"
   },
   "homepage": "https://github.com/tinycreative/react-native-intercom",
-  "dependencies": {}
+  "dependencies": {
+    "@babel/runtime": "^7.3.1"
+  }
 }
