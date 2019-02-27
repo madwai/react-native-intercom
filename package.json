@@ -1,6 +1,6 @@
 {
-  "name": "react-native-intercom-prenetics",
-  "version": "13.0.2",
+  "name": "react-native-intercom",
+  "version": "13.0.3",
   "description": "A React Native client for Intercom.io - Prenetics",
   "main": "./lib/IntercomClient.js",
   "scripts": {
@@ -38,8 +38,8 @@
     "@babel/runtime": "^7.3.1"
   },
 
-  "_from": "react-native-intercom-prenetics",
-  "_id": "react-native-intercom-prenetics@13.0.2",
+  "_from": "react-native-intercom",
+  "_id": "react-native-intercom@13.0.3",
   "_inBundle": false,
   "_integrity": "sha512-KJEgesZzOox4SOf888eQxJ8u2oOb3Vh9dKFY+e2BFRsF1Z4g1I4gyEkIQMQp2A/h301qb59K9yHlbI0+JWGLWA==",
   "_location": "/react-native-intercom",
@@ -47,9 +47,9 @@
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "react-native-intercom-prenetics",
-    "name": "react-native-intercom-prenetics",
-    "escapedName": "react-native-intercom-prenetics",
+    "raw": "react-native-intercom",
+    "name": "react-native-intercom",
+    "escapedName": "react-native-intercom",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -59,7 +59,7 @@
     "/"
   ],
   "_shasum": "7e6f6a491231df9bb474f56fd6fd2820fccf54fd",
-  "_spec": "react-native-intercom-prenetics",
+  "_spec": "react-native-intercom",
   "_where": "/Users/elvin.lee/source/pn-sdk-mobile-ts/com.prenetics.mobile.sdk.demo",
   "bundleDependencies": false,
   "deprecated": false
