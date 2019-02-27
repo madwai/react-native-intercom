@@ -1,14 +1,14 @@
 {
-  "name": "react-native-intercom",
-  "version": "13.0.1",
-  "description": "A React Native client for Intercom.io",
+  "name": "react-native-intercom-prenetics",
+  "version": "13.0.2",
+  "description": "A React Native client for Intercom.io - Prenetics",
   "main": "./lib/IntercomClient.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinycreative/react-native-intercom.git"
+    "url": "git+https://git@github.com:madwai/react-native-intercom.git"
   },
   "author": "Asa Miller",
   "contributors": [
@@ -23,14 +23,44 @@
     {
       "name": "Jason Brown",
       "email": "browniefed@gmail.com"
+    },
+    {
+      "name": "Wai",
+      "email": "elvin.lee@prenetics.com"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tinycreative/react-native-intercom/issues"
+    "url": "https://github.com/madwai/react-native-intercom/issues"
   },
-  "homepage": "https://github.com/tinycreative/react-native-intercom",
+  "homepage": "https://github.com/madwai/react-native-intercom",
   "dependencies": {
     "@babel/runtime": "^7.3.1"
-  }
+  },
+
+  "_from": "react-native-intercom-prenetics",
+  "_id": "react-native-intercom-prenetics@13.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-KJEgesZzOox4SOf888eQxJ8u2oOb3Vh9dKFY+e2BFRsF1Z4g1I4gyEkIQMQp2A/h301qb59K9yHlbI0+JWGLWA==",
+  "_location": "/react-native-intercom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-intercom-prenetics",
+    "name": "react-native-intercom-prenetics",
+    "escapedName": "react-native-intercom-prenetics",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_shasum": "7e6f6a491231df9bb474f56fd6fd2820fccf54fd",
+  "_spec": "react-native-intercom-prenetics",
+  "_where": "/Users/elvin.lee/source/pn-sdk-mobile-ts/com.prenetics.mobile.sdk.demo",
+  "bundleDependencies": false,
+  "deprecated": false
 }
