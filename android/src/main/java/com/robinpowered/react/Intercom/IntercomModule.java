@@ -50,7 +50,7 @@ public class IntercomModule extends ReactContextBaseJavaModule {
                 promise.reject("Invalid apiKey or appId");
             }
             
-            Intercom.initialize(reactContext, apiKey, appId);
+            Intercom.initialize(getCurrentActivity().getApplication(), apiKey, appId);
 
             Log.i(TAG, "setApiKeyAndAppId");
             promise.resolve(null);
